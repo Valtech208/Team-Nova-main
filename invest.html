@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest in a Farmer | Harvest Fund</title>
+  <link rel="stylesheet" href="invest.css">
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+   <!-- nav-bar starts here -->
+    <section class="hero-section">
+     <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+            <img src="./images/logo.png"alt="harvest-logo">
+            </div>
+            </a>
+         <ul>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="invest.html">Invest in a farmer</a></li>
+            <li><a href="For Farmers.html">For Farmers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button  class="sign"><a href="./signup.html" >Sign up</a></button></li>
+            <li><button class="sign"><a href="./login.html">Log in</a></button></li>
+         </ul>
+    </nav>
+    </section>
+    <!-- nav-bar ends here -->
+
+    <!--hero-section starts here-->
+    <section class="hero-section1"> 
+       <div class="hero-image">
+       <div class="hero-text">
+            <h1>Harvest Fund</h1>
+            <p>Support Local Farmers, earn sustainable returns</p>
+            <button><a href="./signup.html">Get started</a></button>
+       </div>
+       </div>
+    </section>  
+    <!-- hero-section ends here -->
+
+  <!-- FARM LISTINGS -->
+  <h2 id="farm-listings">Available Farm Projects</h2>
+  <section class="farm-listings">
+
+    <div class="farm-card" data-funded="600000" data-goal="1000000">
+      <img src="./images/rice-farm.jpg" class="farm-card-image" alt="Rice Farm">
+      <h3>Rice Farming Project</h3>
+      <p>Duration: 6 months</p>
+      <p>Expected ROI: 15%</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%"></div>
+      </div>
+      <p class="funding-text">₦600,000 of ₦1,000,000 (60%)</p>
+      <button class="btn-solid-invest-btn">Invest Now</button>
+    </div>
+
+    <div class="farm-card" data-funded="350000" data-goal="1000000">
+      <img src="./images/maize-farm.jpg" class="farm-card-image" alt="Maize Farm">
+      <h3>Maize Expansion Project</h3>
+      <p>Duration: 8 months</p>
+      <p>Expected ROI: 20%</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 35%"></div>
+      </div>
+      <p class="funding-text">₦350,000 of ₦1,000,000 (35%)</p>
+      <button class="btn-solid invest-btn">Invest Now</button>
+    </div>
+  </section>
+
+  <!-- INVEST MODAL -->
+  <div id="invest-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Invest in this Project</h2>
+
+      <form id="paymentForm">
+        <label>Amount to Invest (₦):</label>
+        <input type="number" id="amount" required>
+
+        <label>Email:</label>
+        <input type="email" id="email-address" required>
+
+        <label>Full Name:</label>
+        <input type="text" id="full-name" required>
+
+        <button type="submit" class="btn-solid">Proceed to Payment</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
